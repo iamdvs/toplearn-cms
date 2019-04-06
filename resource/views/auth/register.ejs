@@ -1,0 +1,118 @@
+
+
+<%- include('../header') %>
+
+<div class="clientarea-page text-center">
+  <div class="container">
+    <div class="inner">
+      <header class="mt-5"><h2>ثبت نام در سایت</h2></header>
+      <p>با ثبت نام در سایت ، از مزایای کاربران سایت بهره مند شوید</p>
+      <div class="form-layer" class="w-50">
+        <form action="/auth/ExternalLogin" id="ex-from" method="post" >
+
+          <div class="login-by">
+            <p>شما می توانید با اکانت گوگل یا گیت هاب وارد سایت شوید</p>
+            <div class="login-by-account">
+              <a id="ex" href="javascript:{}" data-au="Google" class="google">
+                <i class="zmdi zmdi-google-old"></i>
+              </a>
+              <a id="ex" href="javascript:{}" data-au="GitHub" class="github">
+                <i class="zmdi zmdi-github-alt"></i>
+              </a>
+
+            </div>
+            <span> یا از فرم ورود استفاده نمایید </span>
+          </div>
+        </form>
+        <form 
+          action="/auth/sign-up"
+          class="form-style mt-5 "
+          method="post"
+          novalidate="novalidate"
+        >
+          <input
+            name="__RequestVerificationToken"
+            type="hidden"
+            value="uFkm9UMJGFQzOtWjmCST3lzwDSipJgb55dHiTookc-rF5fllzJlF132j-wbXHHb7viBXkkb1o54Jyje6-e0l6gIis_5VHjazAlcxzH803xE1"
+          />
+          <div class="input">
+            <input
+           
+              id="UserName"
+              name="UserName"
+              type="text"
+              class="form-control"
+              placeholder="نام کاربری"
+            />
+            <div class="input">
+                    <input
+                    
+                      id="UserName"
+                      name="UserName"
+                      type="text"
+                      class="form-control"
+                      placeholder="ایمیل "
+                    />
+
+
+         <div class="input">
+           <input
+                           
+                 id="UserName"
+                  name="UserName"
+                   type="text"
+                   class="form-control"
+                     placeholder="رمز عبور"
+
+            />
+
+          </div>
+          <div class="input">
+            <input
+
+              id="RePassword"
+              name="RePassword"
+              type="password"
+              class="form-control"
+              placeholder="تکرار رمز عبور"
+            />
+  
+          </div>
+          <label for="HowInvit">چگونه باما آشنا شدید؟</label>
+          <div>
+            <select
+            style="height:30px;"
+              class=""
+              data-val="true"
+              data-val-required="The چگونه باما آشنا شدید؟ field is required."
+              id="HowInvit"
+              name="HowInvit"
+              aria-describedby="HowInvit-error"
+              aria-invalid="false"
+              ><option selected="" value="0">کانال تلگرام</option
+              ><option value="1">معرفی دوستان</option
+              ><option value="2">تبلیغات</option
+              ><option value="3">موتور های جستجو</option
+              ><option value="4">به صورت تصادفی</option></select
+            >
+          </div>
+         
+  
+          <br />
+          <div class="link">
+            <a href="/auth/forget-password">
+              <i class="zmdi zmdi-lock"></i> رمز عبور خود را فراموش کرده ام !</a
+            >
+            <a href="/auth/sign-up">
+              <i class="zmdi zmdi-account"></i> عضویت در سایت
+            </a>
+          </div>
+          <button class="btn btn-success rounded-pill">ثبت نام</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%- include('../footer') %>

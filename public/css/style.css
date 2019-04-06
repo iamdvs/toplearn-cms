@@ -1,0 +1,17 @@
+*{
+    direction: rtl;
+
+}
+.bg-jum{
+    background-image: url('/img/jonathan-daniels-518652-unsplash.jpg');
+    background-size:cover;
+}
+.back-pishnahad{
+    background-image: url('/img/keji-gao-655772-unsplash.jpg');
+    background-size: cover;
+}
+
+.jointoplearnmedia{
+    background-image: url('/img/jonathan-petersson-621641-unsplash.jpg');
+    background-size: cover;
+}
